@@ -20,7 +20,7 @@ def scrape_text_only(link, prompt, token):
     except Exception as e:
         print(f"Error occurred: {str(e)}")
 
-url = "https://api.cloudflare.com/client/v4/accounts/2e92eb4614a4e9031da13af6d2619fab/ai/run/@cf/openchat/openchat-3.5-0106"
+url = "https://api.cloudflare.com/client/v4/accounts/85d4970843d0f1481a2d622d9e182674/ai/run/@cf/openchat/openchat-3.5-0106"
 
 def get_docs(prompt, token, text_content):
     try:
@@ -48,4 +48,3 @@ def get_docs(prompt, token, text_content):
     except Exception as e:
         print(f"Error occurred: {str(e)}")
 
-scrape_text_only(link="https://www.twilio.com/docs/conversations/api/conversation-resource", prompt="create a conservation resource", token="CtAkepOQnTdha1SYMUE568yT-dq9srpBUeXuWB9c")
