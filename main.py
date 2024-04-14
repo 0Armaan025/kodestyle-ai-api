@@ -2,7 +2,6 @@ import requests
 import base64
 from textcompletion import make_readme
 from codeanalysis import code_analysis, code_score
-from createimage import create_image
 from socialmediamanagement import create_social_media_post
 from flask import Flask, request, jsonify
 from flask_cors import CORS
@@ -70,8 +69,8 @@ def get_social_media_post():
     repo_info = get_repo_info(owner, repo_name, my_token)
     if repo_info:
         repo_name, description, contributors, readme_content = repo_info
-        link = create_image(prompt=f"{repo_name}")
-        post = create_social_media_post(repo_name=repo_name, repo_owner_name=owner, description=description, image_link=link,token="CtAkepOQnTdha1SYMUE568yT-dq9srpBUeXuWB9c", tone=tone, repo_description=description)
+
+        post = create_social_media_post(repo_name=repo_name, repo_owner_name=owner, description=description, token="CtAkepOQnTdha1SYMUE568yT-dq9srpBUeXuWB9c", tone=tone, repo_description=description)
         return jsonify({'post': post}), 200
     else:
         return jsonify({'error': 'Repo information not found'}), 404
