@@ -15,7 +15,7 @@ def make_readme(repo_name, repo_description, repo_contributors, readme_content, 
     }
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer CtAkepOQnTdha1SYMUE568yT-dq9srpBUeXuWB9c"
+        "Authorization": "Bearer V8hFSHBeX7KkV1Vj87YQEM_6K_1lFIWzSC4RXJJr"
     }
 
     response = requests.request("POST", url, json=payload, headers=headers)
