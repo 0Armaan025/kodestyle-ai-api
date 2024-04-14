@@ -21,7 +21,6 @@ def create_social_media_post(repo_name, repo_owner_name, repo_description, descr
     return post
 
 # Call the function to create the social media post
-post = create_social_media_post(repo_name="Whatsapp clone", repo_owner_name="0Armaan025", repo_description="It's a whatsapp clone in Flutter", description="Hey, I want to make a post for my whatsapp upcoming clone in flutter that I'm trying my best to make, it's incomplete yet", token="CtAkepOQnTdha1SYMUE568yT-dq9srpBUeXuWB9c", tone="Informal", image_link="https://dl.kraken.io/api/7e/81/bb/0666c59da206f3ba8e4cdf1bec/image.jpg")
 
 # # Write the post to a file
 # with open("new.txt", "w", encoding="utf-8") as file:
