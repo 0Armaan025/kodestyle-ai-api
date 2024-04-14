@@ -4,7 +4,7 @@ from github import update_file
 
 
 
-url = "https://api.cloudflare.com/client/v4/accounts/2e92eb4614a4e9031da13af6d2619fab/ai/run/@cf/google/gemma-7b-it-lora"
+url = "https://api.cloudflare.com/client/v4/accounts/85d4970843d0f1481a2d622d9e182674/ai/run/@cf/google/gemma-7b-it-lora"
 
 def make_readme(repo_name, repo_description, repo_contributors, readme_content, tone, languages):
     payload = {
