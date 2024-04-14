@@ -1,7 +1,7 @@
 import json
 import requests
 
-url = "https://api.cloudflare.com/client/v4/accounts/2e92eb4614a4e9031da13af6d2619fab/ai/run/@cf/meta/llama-2-7b-chat-fp16"
+url = "https://api.cloudflare.com/client/v4/accounts/85d4970843d0f1481a2d622d9e182674/ai/run/@cf/meta/llama-2-7b-chat-fp16"
 
 def create_social_media_post(repo_name, repo_owner_name, repo_description, description, token, tone):
     payload = {
