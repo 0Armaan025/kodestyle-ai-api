@@ -53,8 +53,8 @@ def update_readme():
 def analyse_the_code():
     data = request.get_json()
     code = data.get('code')
-    analysis = code_analysis(token="CtAkepOQnTdha1SYMUE568yT-dq9srpBUeXuWB9c", code=code)
-    score = code_score(token="CtAkepOQnTdha1SYMUE568yT-dq9srpBUeXuWB9c",code=code)
+    analysis = code_analysis(token="V8hFSHBeX7KkV1Vj87YQEM_6K_1lFIWzSC4RXJJr", code=code)
+    score = code_score(token="V8hFSHBeX7KkV1Vj87YQEM_6K_1lFIWzSC4RXJJr",code=code)
     return jsonify({'analysis': analysis, 'code_score': score}), 200
 
 
@@ -70,7 +70,7 @@ def get_social_media_post():
     if repo_info:
         repo_name, description, contributors, readme_content = repo_info
 
-        post = create_social_media_post(repo_name=repo_name, repo_owner_name=owner, description=description, token="CtAkepOQnTdha1SYMUE568yT-dq9srpBUeXuWB9c", tone=tone, repo_description=description)
+        post = create_social_media_post(repo_name=repo_name, repo_owner_name=owner, description=description, token="V8hFSHBeX7KkV1Vj87YQEM_6K_1lFIWzSC4RXJJr", tone=tone, repo_description=description)
         return jsonify({'post': post}), 200
     else:
         return jsonify({'error': 'Repo information not found'}), 404
